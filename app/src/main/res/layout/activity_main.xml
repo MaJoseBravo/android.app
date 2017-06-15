@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context="com.example.dptoredes.prueba.MainActivity">
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />-->
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Usuario" />
+
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="pass"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="fnIngresar"
+            android:text="Ingresar"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="284dp" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
